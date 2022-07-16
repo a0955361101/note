@@ -22,6 +22,7 @@ white-space: normal;
 window.onscroll = function () {
     const scrollTop =
         document.documentElement.scrollTop || document.body.scrollTop
+    // 798可以替換任何數字
     if (scrollTop < 798) {
         setFixedRemoteControl(false)
     } else {
