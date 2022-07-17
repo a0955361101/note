@@ -16,9 +16,10 @@ white-space: normal;
 
 # JavaScript
 
-`監聽window scrollTop`
+`監聽window scrollTop - 滾動事件`
 
 ```js
+// onscroll滾動事件
 window.onscroll = function () {
     const scrollTop =
         document.documentElement.scrollTop || document.body.scrollTop
