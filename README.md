@@ -33,3 +33,29 @@ window.onscroll = function () {
 ```
 
 ---
+
+# React
+
+`useParams - 取得url上的值`
+
+```js
+const { sid } = useParams()
+console.log(sid)
+    // sid = 1
+<Route path="/course/detailed/:sid" element={<CourseDetailed />} />
+`http://localhost:3000/course/detailed/1`
+```
+
+---
+
+# SQL 語法
+
+`外鍵搜尋`
+
+```sql
+SELECT * FROM`主表單`
+JOIN 要連結的表單
+ON `主表單`.`主表的外鍵欄位` = `要連結的表單`.`要連結的表單的PK`
+```
+
+---
