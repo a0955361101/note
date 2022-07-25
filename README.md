@@ -32,6 +32,12 @@ window.onscroll = function () {
 }
 ```
 
+`平滑移動視窗 - behavior: "smooth"`
+
+```js
+window.scrollTo({ top: pathArr[i] + 200, behavior: 'smooth' })
+```
+
 ---
 
 # React
