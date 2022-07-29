@@ -14,6 +14,17 @@ white-space: normal;
 
 ---
 
+### HTML
+
+`input - 多檔上傳 (multiple)`
+`input - 表示必填 (required)`
+
+```html
+<input type="file" name="file[]" multiple="multiple" required="required" />
+```
+
+---
+
 # JavaScript
 
 `監聽window scrollTop - 滾動事件`
