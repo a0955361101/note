@@ -75,6 +75,15 @@ console.log(sid)
 `http://localhost:3000/course/detailed/1`
 ```
 
+`react-Route v6 url選填`
+
+```js
+<Route path="/course/add">
+    <Route element={<CourseAdd />} path="" />
+    <Route element={<CourseAdd />} path=":sid" />
+</Route>
+```
+
 ---
 
 # SQL 語法
