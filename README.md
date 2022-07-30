@@ -49,6 +49,18 @@ window.onscroll = function () {
 window.scrollTo({ top: pathArr[i] + 200, behavior: 'smooth' })
 ```
 
+`取得網址裡的值`
+
+```js
+// 取得網址裡的sid - 格式: ?transactionId=2022073000722545810&orderId=82
+const getSid = window.location.href
+const url = new URL(getSid)
+url.searchParams.get('orderId')
+const courseSid = url.searchParams.get('orderId')
+console.log(courseSid)
+// courseSid = 82
+```
+
 ---
 
 # React
