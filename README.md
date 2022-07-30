@@ -82,4 +82,10 @@ ON `主表單`.`主表的外鍵欄位` = `要連結的表單`.`要連結的表�
 INSERT INTO `要新增資料的表單`(`course_name`, `course_price`, `course_level`, `course_img_s`, `course_content`, `course_people`, `course_material`) VALUES (?,?,?,?,?,?,?)
 ```
 
+`刪除資料`
+
+```sql
+DELETE FROM `course` WHERE `course`.`course_sid` = 136
+```
+
 ---
