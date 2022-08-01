@@ -2,6 +2,10 @@
 
 `cursor:pointer; - 滑鼠變成手的圖案`
 
+`cursor: not-allowed; - 滑鼠禁止游標`
+
+`cursor: no-drop; - 滑鼠禁止游標 `
+
 `字數限制...`
 
 ```css
