@@ -65,6 +65,12 @@ console.log(courseSid)
 // courseSid = 82
 ```
 
+`刷新當前頁面`
+
+```js
+window.history.go(0)
+```
+
 ---
 
 # React
