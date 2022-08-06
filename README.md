@@ -71,6 +71,12 @@ console.log(courseSid)
 window.history.go(0)
 ```
 
+`監聽事件 - onFocus(獲得焦點時)`
+
+```js
+onFocus
+```
+
 ---
 
 # React
@@ -92,6 +98,14 @@ console.log(sid)
     <Route element={<CourseAdd />} path="" />
     <Route element={<CourseAdd />} path=":sid" />
 </Route>
+```
+
+`React路由跳轉`
+
+```js
+useNavigate
+const navigate = useNavigate()
+navigate('/course/manage', { replace: false })
 ```
 
 ---
@@ -117,6 +131,12 @@ INSERT INTO `要新增資料的表單`(`course_name`, `course_price`, `course_le
 
 ```sql
 DELETE FROM `course` WHERE `course`.`course_sid` = 136
+```
+
+`修改資料`
+
+```sql
+UPDATE `course` SET `course_name` = course_name, `course_price` = course_price, `course_level` = course_level, `course_img_s` = course_img_s, `course_content` = course_content, `course_people` = course_people, `course_material` = course_material WHERE course.course_sid = course_sid;
 ```
 
 ---
