@@ -77,6 +77,12 @@ window.history.go(0)
 onFocus
 ```
 
+`阻止表單默認事件`
+
+```js
+e.preventDefault()
+```
+
 ---
 
 # React
