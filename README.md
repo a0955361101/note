@@ -6,6 +6,8 @@
 
 `cursor: no-drop; - 滑鼠禁止游標 `
 
+`user-select: none; - 禁止反白`
+
 `字數限制...`
 
 ```css
