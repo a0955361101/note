@@ -99,6 +99,16 @@ console.log(sid)
 `http://localhost:3000/course/detailed/1`
 ```
 
+`useCallback `
+
+```js
+const memoizedCallback = useCallback(() => {
+    doSomething(a, b)
+}, [a, b])
+
+//透過 useCallback 就可以避免因為 Functional Component 每次重新執行後，函式內容明明相同，但卻被判斷為不同，進而導致 useEffect 又再次被呼叫到的情況。
+```
+
 `react-Route v6 url選填`
 
 ```js
