@@ -126,6 +126,14 @@ const navigate = useNavigate()
 navigate('/course/manage', { replace: false })
 ```
 
+`在React讓資料庫來的資料顯示br的屬性`
+
+```js
+dangerouslySetInnerHTML={{
+                    __html: start ? courseDetailedData[0].course_content : '',
+                }}
+```
+
 ---
 
 # SQL 語法
