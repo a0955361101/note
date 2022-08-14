@@ -85,6 +85,40 @@ onFocus
 e.preventDefault()
 ```
 
+`將物件轉為陣列`
+
+```js
+const people = {
+    '001': {
+        name: 'Casper',
+        like: '鍋燒意麵',
+        age: 18,
+    },
+    '002': {
+        name: 'Wang',
+        like: '炒麵',
+        age: 24,
+    },
+    '004': {
+        name: '滷蛋',
+        like: '蘿蔔泥',
+        age: 3,
+    },
+}
+
+1. Object.values() 可以直接傳入一個物件，並將傳入的物件直接轉為陣列的形式。
+
+Object.values(people)
+people = (3) [{…}, {…}, {…}]
+0: {name: 'Casper', like: '鍋燒意麵', age: 18}
+1: {name: 'Wang', like: '炒麵', age: 24}
+2: {name: '滷蛋', like: '蘿蔔泥', age: 3}
+
+2. Object.keys() 可以直接傳入一個物件，並將其 key 值以陣列的方式呈現。
+
+3. Object.entries() 可以直接傳入一個物件，並將 key 與 value 以陣列的方式呈現。
+```
+
 ---
 
 # React
