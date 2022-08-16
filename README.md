@@ -119,6 +119,26 @@ people = (3) [{…}, {…}, {…}]
 3. Object.entries() 可以直接傳入一個物件，並將 key 與 value 以陣列的方式呈現。
 ```
 
+`requestAnimationFrame`
+
+```js
+//requestAnimationFrame用法與setTimeout與setInterval差不多，一樣傳入一個callback，不需傳入秒數，會自動以瀏覽器的更新頻率，requestAnimationFrame(callback)會回傳一個唯一的requestID，可以透過呼叫 cancelAnimationFrame(requestID) 取消此動畫。
+let elem = document.getElementById('animate')
+let left = 0
+let bound = false
+
+requestAnimationFrame(Move)
+
+function Move() {
+    if (left === 0 || left === 350) {
+        bound = !bound
+    }
+    bound ? left++ : left--
+    elem.style.left = left + 'px'
+    window.requestAnimationFrame(Move)
+}
+```
+
 ---
 
 # React
