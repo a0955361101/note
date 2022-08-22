@@ -18,6 +18,21 @@ display: -webkit-box;
 white-space: normal;
 ```
 
+`visibility`
+
+```
+ visible
+visibility 屬性的 initial value
+產生的 box 是可見的
+
+
+hidden
+產生的 box 是不可見的 (完全透明，不會繪製 (drawn) 在畫面上)
+但不可見的 box 還是會影響佈局
+如果元素的 descendant 設定 visibility: visible，則它們將是可見的
+
+```
+
 ---
 
 # HTML
@@ -148,6 +163,19 @@ export const chunk = (arr, size) =>
     Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
         arr.slice(i * size, i * size + size)
     )
+```
+
+`ES6 Object.assign()這個方法來實現淺拷貝`
+
+```js
+const object1 = {
+    a: 1,
+    b: 2,
+    c: 3,
+}
+const object2 = Object.assign({ c: 4, d: 5 }, object1)
+console.log(object2)
+//  {c: 3, d: 5, a: 1, b: 2}
 ```
 
 ---
