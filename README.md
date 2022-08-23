@@ -271,3 +271,9 @@ UPDATE `course` SET `course_name` = course_name, `course_price` = course_price, 
 ```
 
 ---
+
+### Node.js
+
+`使用 node --version 命令在命令提示符中檢查 Node.js 的當前版本`
+
+`使用 node -v 命令的較短形式將同樣返回當前在你的系統上執行的 Node.js 版本。`
