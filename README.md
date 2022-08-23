@@ -33,6 +33,18 @@ hidden
 
 ```
 
+`垂直置中`
+
+```css
+1. display: flex;
+align-items: center;
+
+2.margin
+
+3. line-height
+
+```
+
 ---
 
 # HTML
