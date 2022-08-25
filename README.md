@@ -45,6 +45,12 @@ align-items: center;
 
 ```
 
+`取消input焦點框框`
+
+```css
+outline: none;
+```
+
 ---
 
 # HTML
