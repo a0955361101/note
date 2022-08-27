@@ -245,6 +245,8 @@ dangerouslySetInnerHTML={{
                 }}
 ```
 
+`yarn run deploy - React github page靜態網頁佈署`
+
 ---
 
 # SQL 語法
