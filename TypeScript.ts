@@ -84,3 +84,127 @@ const obj2: Card2 = {
     age: 12,
     desc: '...',
 }
+
+// function
+// 參數
+// function hello(){}
+function hello(a: string, b: string) {
+    return a + b
+}
+
+function hello2(a: string, b: string): number {
+    console.log(a, b)
+    return 123
+}
+
+function hello3(a: number, b: boolean, c: string) {
+    return 100
+}
+
+// undefined
+// 可選參數必須放在最後面 name?: string
+function test2(a: string) {
+    console.log(a)
+}
+function hello4(age: number, name?: string) {
+    // let a: string
+    // a = name
+    if (name === undefined) {
+        return
+    }
+    test2(name)
+    return name
+}
+
+// 箭頭函式
+const func = () => {}
+
+const func2 = () => {
+    return 10
+}
+
+// 斷言 unknown
+type Data = {
+    userId: number
+    id: number
+    title: string
+    completed: boolean
+}
+
+async function getDate() {
+    const res = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    const data = (await res.json()) as Data
+}
+
+const data1: Data = {
+    userId: 1,
+    id: 1,
+    title: 'delectus aut autem',
+    completed: false,
+}
+
+type Beta = {
+    name: string
+}
+
+// 假設data1是動態的
+const Beta = data1 as unknown as Beta
+
+// class
+
+// 成員
+// private 私有
+// public 公開
+// protected 受保護
+
+class Live {
+    public roomName: string
+    private id: string
+    protected name: string
+
+    constructor(roomName1: string, id1: string, name1: string) {
+        console.log('建立直播中')
+        this.roomName = roomName1
+        this.id = id1
+        this.name = name1
+    }
+}
+
+class CarLive extends Live {
+    constructor(roomName1: string, id1: string, name1: string) {
+        super(roomName1, id1, name1)
+    }
+    start() {
+        super.name
+    }
+}
+
+const live = new Live('1號', '000001', 'bruce')
+const carLive = new CarLive('car room', '000002', 'bruce2')
+
+class Live2 {
+    // 私有變數
+    #name
+    constructor(name: string) {
+        this.#name = name
+    }
+}
+
+const live2 = new Live2('live2')
+
+export interface CarProps {
+    name: string
+    age: number
+    start: () => void
+}
+
+class Car implements CarProps {
+    name: string
+    age: number
+    constructor(name: string, age: number) {
+        this.name = name
+        this.age = age
+    }
+
+    start() {}
+}
