@@ -51,6 +51,12 @@ align-items: center;
 outline: none;
 ```
 
+`增加或減少載入物件的寬度及高度(維持原比例)直到放得進所定義的元素寬高。`
+
+```css
+object-fit: contain;
+```
+
 ---
 
 # HTML
