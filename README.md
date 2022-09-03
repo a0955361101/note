@@ -57,6 +57,20 @@ outline: none;
 object-fit: contain;
 ```
 
+`overscroll-behavior`
+
+```css
+在手機上的時候有時候可以滑出超過頁面，就會看到背景的白色，或者是有些瀏覽器會有下拉重整的功能，當你在頁面最頂端還往下拉的時候就會變成重新整理。
+
+如果想阻止這個行為，可以用 overscroll-behavior 這個屬性。
+```
+
+`平滑捲動`
+
+```css
+很久以前這功能可能需要 JS，但現在可以用 CSS 的 scroll-behavior: smooth;
+```
+
 ---
 
 # HTML
@@ -298,3 +312,13 @@ UPDATE `course` SET `course_name` = course_name, `course_price` = course_price, 
 `使用 node --version 命令在命令提示符中檢查 Node.js 的當前版本`
 
 `使用 node -v 命令的較短形式將同樣返回當前在你的系統上執行的 Node.js 版本。`
+
+`RESTful API`
+
+```js
+`獲取使用者資料` /GET /users
+`獲取使用者資料` /GET /user/:id
+`新增使用者資料` /POST /user
+`更新使用者資料` /PUT /user/:id
+`刪除使用者資料` /DELETE /user/:id
+```
