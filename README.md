@@ -8,6 +8,8 @@
 
 `user-select: none; - 禁止反白`
 
+`pointer-events-none - 穿透div`
+
 `字數限制...`
 
 ```css
@@ -274,6 +276,14 @@ dangerouslySetInnerHTML={{
 
 `yarn run deploy - React github page靜態網頁佈署`
 
+`useCallback 跟 useMemo 有什麼不同`
+
+```js
+useCallback 回傳 callBack function，所以可以傳參數進去
+useMemo 回傳值
+useCallback(fn, deps) 等同於 useMemo(() => fn, deps)
+```
+
 ---
 
 # SQL 語法
@@ -321,4 +331,12 @@ UPDATE `course` SET `course_name` = course_name, `course_price` = course_price, 
 `新增使用者資料` /POST /user
 `更新使用者資料` /PUT /user/:id
 `刪除使用者資料` /DELETE /user/:id
+```
+
+### tailwind
+
+`tailwind.config.js 設定`
+
+```js
+content: ["src/**/*.js", "src/**/*.jsx", "src/*.js", "src/*.jsx", "src/**/*.html", "src/*.html"],
 ```
