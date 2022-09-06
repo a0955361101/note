@@ -73,6 +73,13 @@ object-fit: contain;
 很久以前這功能可能需要 JS，但現在可以用 CSS 的 scroll-behavior: smooth;
 ```
 
+`防止圖片變形`
+
+```css
+object-fit: cover;
+object-position: center;
+```
+
 ---
 
 # HTML
