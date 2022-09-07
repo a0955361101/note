@@ -232,6 +232,14 @@ Array.of(10, 9, 8)
 // [(10, 9, 8)]
 ```
 
+`reverse()`
+
+```js
+reverse() 方法會*原地（in place）*反轉（reverses）一個陣列。陣列中的第一個元素變為最後一個，而最後一個元素則變成第一個。
+     console.log((123 + "").split("").reverse().join(""));
+    //  結果為'321'
+```
+
 ---
 
 # React
