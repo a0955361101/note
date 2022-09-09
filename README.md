@@ -355,3 +355,7 @@ UPDATE `course` SET `course_name` = course_name, `course_price` = course_price, 
 ```js
 content: ["src/**/*.js", "src/**/*.jsx", "src/*.js", "src/*.jsx", "src/**/*.html", "src/*.html"],
 ```
+
+### TypeScript
+
+`創建一個typescript-react專案 : create-react-app {name} --template typescript`
