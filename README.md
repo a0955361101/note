@@ -10,6 +10,8 @@
 
 `pointer-events-none - 穿透div`
 
+`word-break:break-all - 針對字母與數字不會自動換行的問題`
+
 `字數限制...`
 
 ```css
