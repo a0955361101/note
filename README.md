@@ -242,6 +242,64 @@ reverse() 方法會*原地（in place）*反轉（reverses）一個陣列。陣�
     //  結果為'321'
 ```
 
+`Event Loop(事件循環)`
+
+```js
+consloe.log('a')
+setTimeout(() => {
+    consloe.log('b')
+}, 0)
+consloe.log('c')
+// 結果會是
+// a
+// c
+// b
+
+1.首先 console.log('a');、setTimeout(() => console.log('b'), 0); 與 console.log('c'); 會被放在一個地方，稱之為 Call Stack
+
+2.那麼接下來 JavaScript 會將 setTimeout(() => console.log('b'), 0); 放到 Event Table 註冊這個事件
+
+3.這邊 Event Table 會將 setTimeout 紀錄 0 秒後執行並放在 Event Table 中，當放在 Event Table 的函式時間到了之後，就會將 Event Table 中這個函式放到 Event Queue 等待被丟回 Call Stack ， 所以 Event Queue 也就是一個緩衝區，準備回到 Call Stack 的地方。
+
+4.接下來會有一個機制一直監聽 Event Queue 裡面有沒有東西要丟出來到 Call Stack，當若有東西的話它就會丟到 Call Stack
+
+5.當發現裡面若有東西時，它就會將結果丟回到 Call Stack
+
+
+```
+
+`閉包`
+
+```js
+function myMoney(price) {
+    let money = 1000
+    return (money = money - price)
+}
+let count = myMoney
+
+// JavaScript 再運作之後並沒有建立 function myMoney 給變數 count，所以當每次我執行 count(); 都是在建立新的執行環境，這也是為什麼 money 總是等於 1000$。
+
+那閉包呢?前面有講到 閉包就是一個 function 中回傳 function。
+
+function myMoney() {
+  let money = 1000;
+  return function(price) {
+    return money = money - price;
+  }
+}
+
+let count = myMoney();
+
+count(100)
+// 900
+count(50)
+// 850
+count(700)
+// 150
+
+// 其實在 JavaScript 創造階段時，function myMoney 就被創造執行環境，並儲存在變數 count 中，所以因為這個樣子 myMoney 裡面的變數 money 被儲存在記憶體中，當每次執行 count() 時也就可以更新變數 money。
+```
+
 ---
 
 # React
