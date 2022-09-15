@@ -721,3 +721,13 @@ function buildName(firstName: string, lastName: string = 'Cat') {
 let tomcat = buildName('Tom', 'Cat')
 let tom = buildName('Tom')
 ```
+
+`eslint prettier`
+
+```
+yarn add eslint -D
+yarn add eslint-config-prettier -D
+yarn add eslint-plugin-prettier -D
+yarn add eslint-plugin-vue -D
+yarn add prettier -D
+```
