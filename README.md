@@ -734,7 +734,7 @@ yarn add prettier -D
 ```
 
 ### git
-`git init - 開始使用git`
+`git init - 新增一個儲存庫`
 
 `git config --global user.name "名稱"`
 
@@ -744,7 +744,7 @@ yarn add prettier -D
 
 `git status - 查詢當前狀態`
 
-`git add . - 加到索引  -  .代表所有 可以git add "README.md" 指定檔案`
+`git add . - 加到索引  -  . 代表所有 也可以 git add "README.md" 來指定 README.md 這個檔案`
 
 `git commit -m "更新內容"  -  將索引檔變成一個更新`
 
