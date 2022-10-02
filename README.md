@@ -753,3 +753,7 @@ yarn add prettier -D
 `git push - 推送到遠端`
 
 `git log - 查詢更新幾次`
+
+`git remote add origin 遠端數據庫網址 - 註冊遠端數據庫`
+
+`git push -u "遠端數據庫名稱"  -  -u代表之後直接打 git push 預設會推上去的數據庫`
