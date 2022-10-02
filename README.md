@@ -722,6 +722,7 @@ let tomcat = buildName('Tom', 'Cat')
 let tom = buildName('Tom')
 ```
 
+### eslint prettier
 `eslint prettier`
 
 ```
@@ -731,3 +732,9 @@ yarn add eslint-plugin-prettier -D
 yarn add eslint-plugin-vue -D
 yarn add prettier -D
 ```
+
+### git
+`git init - 開始使用git`
+`git config --global user.name "名稱"`
+`git config --global user.email "信箱"`
+`git config --list  - 查詢 git 設定內容`
