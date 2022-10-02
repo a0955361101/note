@@ -742,6 +742,8 @@ yarn add prettier -D
 
 `git config --list  - 查詢 git 設定內容`
 
+`git config --global alias.ci commit - 設定 commit 可用縮寫 ci 表示`
+
 `git status - 查詢當前狀態`
 
 `git add . - 加到索引  -  . 代表所有 也可以 git add "README.md" 來指定 README.md 這個檔案`
