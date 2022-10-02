@@ -735,11 +735,19 @@ yarn add prettier -D
 
 ### git
 `git init - 開始使用git`
+
 `git config --global user.name "名稱"`
+
 `git config --global user.email "信箱"`
+
 `git config --list  - 查詢 git 設定內容`
+
 `git status - 查詢當前狀態`
+
 `git add . - 加到索引  -  .代表所有 可以git add "README.md" 指定檔案`
+
 `git commit -m "更新內容"  -  將索引檔變成一個更新`
+
 `git push - 推送到遠端`
+
 `git log - 查詢更新幾次`
