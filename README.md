@@ -757,3 +757,14 @@ yarn add prettier -D
 `git remote add origin 遠端數據庫網址 - 註冊遠端數據庫`
 
 `git push -u "遠端數據庫名稱"  -  -u代表之後直接打 git push 預設會推上去的數據庫`
+
+`origin - 預設遠端數據庫名稱`
+
+`HEAD - 指標`
+
+`branch - 分支 預設分支叫做 master `
+
+`git checkout 編號 - 回頭看之前的版本`
+
+`git checkout master(分支名稱) - 回到最新版本`
+
