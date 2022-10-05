@@ -97,6 +97,10 @@ object-position: center;
 
 # JavaScript
 
+`const activeEl = document.activeElement - 取得當前獲得焦點的元素`
+
+`activeEl.nextElementSibling.focus(); - 返回當前元素在其父元素的子元素節點中的後一個元素節點，如果該元素已經是最后一個元素節點，則返回 null, 该属性是只讀的。`
+
 `監聽window scrollTop - 滾動事件`
 
 ```js
