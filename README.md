@@ -768,3 +768,5 @@ yarn add prettier -D
 
 `git checkout master(分支名稱) - 回到最新版本`
 
+`git reset HEAD - 加入索引的檔案還原到工作目錄`
+
