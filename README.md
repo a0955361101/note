@@ -772,7 +772,7 @@ yarn add prettier -D
 
 `git checkout master(分支名稱) - 回到最新版本`
 
-`git reset HEAD - 加入索引的檔案還原到工作目錄`
+`git reset HEAD^ (一個^等於往前一個版本)- 還原上個版本`
 
 `git merge 分支名稱 - 合併分支`
 
