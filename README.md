@@ -774,4 +774,8 @@ yarn add prettier -D
 
 `git reset HEAD - 加入索引的檔案還原到工作目錄`
 
-test
+`git merge 分支名稱 - 合併分支`
+
+`git merge 分支名稱 --no-ff - 取消快轉`
+
+`git reset -hard ORIG_HEAD - 還原合併前狀態`
