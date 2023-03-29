@@ -736,16 +736,3 @@ yarn add eslint-plugin-prettier -D
 yarn add eslint-plugin-vue -D
 yarn add prettier -D
 ```
-
-
-`git reset HEAD^ (一個^等於往前一個版本)- 還原上個版本會留檔`
-
-`git reset HEAD^ --hard - 還原上個版本不會留檔`
-
-`git merge 分支名稱 - 合併分支`
-
-`git merge 分支名稱 --no-ff - 取消快轉`
-
-`git reset -hard ORIG_HEAD - 還原合併前狀態`
-
-`git reflog - 還原大招`
