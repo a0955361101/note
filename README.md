@@ -737,38 +737,4 @@ yarn add eslint-plugin-vue -D
 yarn add prettier -D
 ```
 
-### git
-`git init - 新增一個儲存庫`
-
-`git config --global user.name "名稱"`
-
-`git config --global user.email "信箱"`
-
-`git config --list  - 查詢 git 設定內容`
-
-`git config --global alias.ci commit - 設定 commit 可用縮寫 ci 表示`
-
-`git status - 查詢當前狀態`
-
-`git add . - 加到索引  -  . 代表所有 也可以 git add "README.md" 來指定 README.md 這個檔案`
-
-`git commit -m "更新內容"  -  將索引檔變成一個更新`
-
-`git push - 推送到遠端`
-
-`git log - 查詢更新幾次`
-
-`git remote add origin 遠端數據庫網址 - 註冊遠端數據庫`
-
-`git push -u "遠端數據庫名稱"  -  -u代表之後直接打 git push 預設會推上去的數據庫`
-
-`origin - 預設遠端數據庫名稱`
-
-`HEAD - 指標`
-
-`branch - 分支 預設分支叫做 master `
-
-`git checkout 編號 - 回頭看之前的版本`
-
-`git checkout master(分支名稱) - 回到最新版本`
 
